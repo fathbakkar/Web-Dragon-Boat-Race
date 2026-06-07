@@ -1,5 +1,5 @@
 /* ============================================
-   SIGMA OWI — style.css
+   style.css
    Dragon Boat & Pacu Jalur
    ============================================ */
 
@@ -209,19 +209,6 @@ nav.scrolled {
   align-items: center;
 }
 
-.hero-tagline-top {
-  font-family: Helvetica, sans-serif;
-  font-weight: 700;
-  font-size: clamp(12px, 1.5vw, 20px);
-  text-transform: uppercase;
-  color: var(--white);
-  opacity: 0.9;
-  margin-bottom: 4px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  justify-content: center;
-}
 
 .hero-title {
   font-family: 'Khand', sans-serif;
@@ -233,16 +220,6 @@ nav.scrolled {
   text-shadow: 0 4px 4px rgba(0,0,0,0.35);
 }
 
-.hero-title-pacu {
-  font-family: Helvetica, sans-serif;
-  font-weight: 700;
-  font-style: italic;
-  font-size: clamp(56px, 11vw, 145px);
-  line-height: 0.9;
-  color: var(--yellow);
-  text-transform: uppercase;
-  text-shadow: 0 6px 17px rgba(0,0,0,0.35);
-}
 
 .hero-subtitle {
   font-family: 'Josefin Sans', sans-serif;
@@ -342,9 +319,6 @@ nav.scrolled {
   gap: 24px;
   align-items: center;
 }
-.section-about-inner.pacu {
-  border-color: var(--gray50);
-}
 
 .about-heading {
   font-family: 'Kumbh Sans', sans-serif;
@@ -354,7 +328,6 @@ nav.scrolled {
   text-transform: uppercase;
   line-height: 1.2;
 }
-.about-heading.helvetica { font-family: Helvetica, sans-serif; }
 
 .about-text {
   font-family: 'Kumbh Sans', sans-serif;
