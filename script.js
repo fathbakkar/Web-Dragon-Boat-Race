@@ -39,13 +39,6 @@ function shareFB() {
     '_blank'
   );
 }
-function shareX() {
-  window.open(
-    'https://twitter.com/intent/tweet?text=Dragon+Boat+Tanjungpinang+%23HeritagePride&url=' +
-    encodeURIComponent(location.href),
-    '_blank'
-  );
-}
 function shareLinkedIn() {
   window.open(
     'https://linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(location.href),
