@@ -536,6 +536,26 @@ nav.scrolled {
   flex-wrap: wrap;
 }
 
+/* ── Event Alt: info kiri, gambar kanan + divider + badge ── */
+.section-event-alt {
+  border-top: 1px solid rgba(255,255,255,0.12);
+  padding-top: clamp(40px, 6vw, 80px);
+}
+
+.event-badge {
+  display: inline-block;
+  background: var(--yellow);
+  color: var(--black);
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: clamp(11px, 1vw, 14px);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 6px 16px;
+  border-radius: 50px;
+  margin-bottom: 12px;
+}
+
 /* ============================================
    GALLERY
    ============================================ */
@@ -689,6 +709,7 @@ footer {
   .section-video  { padding: 0 20px 40px; }
   .video-overlay-top { max-width: 90%; top: 20px; left: 20px; }
   .section-event  { flex-direction: column; padding: 50px 24px; }
+  .section-event-alt { flex-direction: column-reverse; }
   .event-image-wrap { min-height: 240px; }
   .section-gallery { flex-direction: column; padding: 0 20px 40px; }
   .gallery-item   { height: 240px; }
