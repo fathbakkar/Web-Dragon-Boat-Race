@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sigma Owi – Dragon Boat & Pacu Jalur</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Khand:wght@400;600;700&family=Kumbh+Sans:wght@700&family=Inter:wght@400;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ============================================
+     NAVIGATION
+     ============================================ -->
+<nav id="mainNav">
+  <a class="nav-brand" id="navBrand" href="#">Dragon Boat Race</a>
+
+  <ul class="nav-links">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About Activities</a></li>
+    <li><a href="#event">Schedule</a></li>
+    <li><a href="#gallery">Documentation</a></li>
+  </ul>
+
+  <button class="btn-watch" onclick="openYoutube()">Watch Now!</button>
+
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#hero"    onclick="closeMenu()">Home</a>
+  <a href="#about"   onclick="closeMenu()">About Activities</a>
+  <a href="#event"   onclick="closeMenu()">Schedule</a>
+  <a href="#gallery" onclick="closeMenu()">Documentation</a>
+  <button class="btn-watch" onclick="openYoutube(); closeMenu()">Watch Now!</button>
+</div>
+
+
+<!-- ============================================
+     PAGE 1: DRAGON BOAT
+     ============================================ -->
+<div class="page active" id="page-dragon">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-gradient-top"></div>
+    <div class="hero-gradient-bot"></div>
+
+    <div class="hero-cards">
+      <div class="hero-cards-inner">
+        <div class="hcard"><img src="https://www.figma.com/api/mcp/asset/235d9f41-4223-4c55-8ae9-c2d1a7fc7ab8" alt="" /></div>
+        <div class="hcard"><img src="https://www.figma.com/api/mcp/asset/075357b5-4ea4-49cc-8fa2-7fa81ad14992" alt="" /></div>
+        <div class="hcard"><img src="https://www.figma.com/api/mcp/asset/a70e63ee-997f-4ebf-8eb4-1eefdab8e768" alt="" /></div>
+        <div class="hcard"><img src="https://www.figma.com/api/mcp/asset/70f0e3a6-b029-438a-8c9a-bb6c1fd98cd1" alt="" /></div>
+        <div class="hcard"><img src="https://www.figma.com/api/mcp/asset/6a285dac-2757-482d-b38e-8b61af85e94a" alt="" /></div>
+      </div>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-title animate-in delay-1">Dragon Boat</p>
+      <p class="hero-subtitle animate-in delay-2">Tanjungpinang International</p>
+      <p class="hero-tagline animate-in delay-3">Heritage of the River, Pride of the State</p>
+      <p class="hero-desc animate-in delay-4">
+        Harmoni Budaya Bahari: Perpaduan Tradisi Melayu dan Warisan Tionghoa
+        dalam Satu Alur Dayung di Perairan Sungai Carang.
+      </p>
+      <div class="hero-buttons animate-in delay-5">
+        <button class="btn-outline" onclick="goTo('about')">View History</button>
+        <button class="btn-primary" onclick="goTo('event')">View Event Schedule</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section-about" id="about">
+    <div class="section-about-inner">
+      <p class="about-heading">Warisan Bahari<br>Sungai Carang</p>
+      <p class="about-text">
+        Berawal dari ritual "Sembahyang Keselamatan Laut" masyarakat Tionghoa di Tanjungpinang
+        sejak tahun 1952 sebagai bentuk syukur dan permohonan perlindungan di laut.
+      </p>
+      <p class="about-text">
+        Diresmikan sebagai agenda pariwisata sejak 1992, IDBR kini menjadi magnet atlet
+        mancanegara dari Singapura, Malaysia, hingga Brunei Darussalam.
+      </p>
+    </div>
+  </section>
+
+  <!-- VIDEO -->
+  <section class="section-video">
+    <div class="video-card" onclick="openYoutube()">
+      <img class="video-bg" src="https://www.figma.com/api/mcp/asset/49325af6-a6cb-405b-b830-54c4e308ec45" alt="" />
+      <div class="video-overlay-top">
+        <p class="video-event-tag">
+          Tanjungpinang International Dragon Boat Race
+          <img src="https://www.figma.com/api/mcp/asset/10159fee-8ba3-412f-afc3-2ee9480cb5c2" alt="🇮🇩" style="height:16px;width:auto;display:inline-block;" />
+        </p>
+        <p class="video-title">Dragon<br>Boat</p>
+        <p class="video-tagline">Heritage of the River, Pride of the State</p>
+        <p class="video-desc">
+          Harmoni Budaya Bahari: Perpaduan Tradisi Melayu dan Warisan Tionghoa
+          dalam Satu Alur Dayung di Perairan Sungai Carang.
+        </p>
+      </div>
+      <div class="play-btn">
+        <img src="https://www.figma.com/api/mcp/asset/01ca6112-3c38-47a4-81ba-d1af3319aa7c" alt="Play" />
+      </div>
+      <div class="video-footer">
+        <span class="video-footer-label">Tonton di</span>
+        <img class="yt-logo" src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube" />
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENT -->
+  <section class="section-event" id="event">
+    <div class="event-image-wrap">
+      <img src="https://www.figma.com/api/mcp/asset/cfe9e5e5-d9f7-4dff-be7d-dcbfeb2492d3" alt="" />
+    </div>
+    <div class="event-info">
+      <div>
+        <p class="event-location">Perairan Sungai Carang</p>
+        <p class="event-date">17–21 August 2025</p>
+        <p class="event-subloc">Perairan Sungai Tanjungpinang</p>
+      </div>
+      <div class="event-activities">
+        <p class="label">Activity</p>
+        <p class="value">
+          Parade Route · Riau Culinary Festival · Traditional Dance Performances
+          · MSME &amp; Local Crafts Stalls
+        </p>
+      </div>
+      <div class="event-buttons">
+        <button class="btn-outline">Tourist Guide</button>
+        <button class="btn-primary">Get Exclusive Spots</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section-gallery" id="gallery">
+    <div class="gallery-item"><img src="https://www.figma.com/api/mcp/asset/6a285dac-2757-482d-b38e-8b61af85e94a" alt="" /></div>
+    <div class="gallery-item"><img src="https://www.figma.com/api/mcp/asset/235d9f41-4223-4c55-8ae9-c2d1a7fc7ab8" alt="" /></div>
+    <div class="gallery-item"><img src="https://www.figma.com/api/mcp/asset/075357b5-4ea4-49cc-8fa2-7fa81ad14992" alt="" /></div>
+  </section>
+
+</div><!-- /page-dragon -->
+
+
+<!-- ============================================
+     FOOTER
+     ============================================ -->
+<footer>
+  <p class="footer-heading">LET'S PRESERVE THIS HERITAGE TOGETHER</p>
+  <p class="footer-text">
+    The Dragon Boat Race is not just the pride of Tanjungpinang; it is part of Indonesia's
+    maritime cultural identity that must continue to live, grow, and be recognized globally.
+    Support it by attending, sharing the spirit, and preserving our sea traditions.
+  </p>
+  <p class="footer-share-label">SHARE</p>
+  <div class="footer-social">
+    <button class="footer-social-btn" onclick="shareIG()" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+        <circle cx="12" cy="12" r="4"/>
+        <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+      </svg>
+    </button>
+    <button class="footer-social-btn" onclick="shareLinkedIn()" aria-label="LinkedIn">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+        <rect x="2" y="9" width="4" height="12"/>
+        <circle cx="4" cy="4" r="2"/>
+      </svg>
+    </button>
+    <button class="footer-social-btn" onclick="shareFB()" aria-label="Facebook">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+      </svg>
+    </button>
+    <button class="footer-social-btn" onclick="openYoutube()" aria-label="YouTube">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.4a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/>
+        <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#000"/>
+      </svg>
+    </button>
+  </div>
+</footer>
+
+
+<!-- Script -->
+<script src="script.js"></script>
+</body>
+</html>
